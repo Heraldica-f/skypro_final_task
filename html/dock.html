@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Команды Docker</title>
+      <link rel="stylesheet" type="text/css" href="../css/style.css">
+      <link rel="stylesheet" type="text/css" href="../css/font-awesome.css">
+      <link rel="shortcut icon" href="../img/favicon.jpg" type="image/x-icon">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:700" rel="stylesheet">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+   </head>
+   <body>
+      <!--Card-->
+      <div class="card animated fadeIn">
+         <p class="subtitle">Основные команды Docker</p>
+         <h3 id="rt-0"> Работа с контейнерами</h3>
+         <ul>
+            <li>docker run — создаёт и запускает контейнер из образа. Принимает параметры, которые определяют настройки контейнера.</li>
+            <li>docker ps — выводит список активных контейнеров в системе. Флаг -a показывает все контейнеры, включая остановленные.</li>
+            <li>docker stop — останавливает работающий контейнер.</li>
+            <li>docker restart — перезапускает контейнер.</li>
+            <li>docker rm — удаляет один или несколько контейнеров, которые уже остановлены.</li>
+         </ul>
+         <h3 id="rt-1">Работа с образами</h3>
+         <ul>
+            <li>docker pull — загружает образы из удалённого репозитория Docker Hub. Можно указать версию образа</li>
+            <li>docker images — выводит список загруженных образов.</li>
+            <li>docker rmi — удаляет образы с локального хоста.</li>
+            <li>docker search — ищет определённый образ в Docker Hub.</li>
+         </ul>
+         <h3 id="rt-2">Работа с сетями и томами</h3>
+         <ul>
+            <li>docker network create — создаёт новую сеть.</li>
+            <li>docker network ls — выводит список всех сетей.</li>
+            <li>docker network connect — подключает контейнер к сети.</li>
+            <li>docker network disconnect — отключает контейнер от сети.</li>
+            <li>docker volume create — создаёт новый том для сохранения данных контейнера.</li>
+            <li>docker volume ls — выводит список всех томов.</li>
+            <li>docker volume rm — удаляет том, если он не используется контейнерами.</li>
+         </ul>
+         <h3 id="rt-3">Полезные команды</h3>
+         <ul>
+            <li>docker system prune — очищает систему, удаляя неиспользуемые образы, контейнеры и сети.</li>
+            <li>docker logs — выводит логи контейнера.</li>
+            <li>docker exec — открывает интерактивный терминал внутри запущенного контейнера.</li>
+         </ul>
+      </div>
+      <!--footer-->
+      <footer class="animated fadeIn">
+         <p class="location" align="center">
+            <a href="../index.html">Вернуться на главную</a>
+         </p>
+         &copy; 2024. SkyPro
+      </footer>
+   </body>
+</html>
